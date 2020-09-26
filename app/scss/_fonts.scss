@@ -1,40 +1,53 @@
-// ----------- Open Sans -----------
+// ----------- Lato -----------
 @font-face {
-  font-family: 'Open Sans';
-  src: local('Open Sans'), local('OpenSans'),
-    url('../fonts/OpenSans/opensans.woff2') format('woff2'),
-    url('../fonts/OpenSans/opensans.woff') format('woff'),
-    url('../fonts/OpenSans/opensans.ttf') format('truetype');
+  font-family: 'Lato';
+  src: local('Lato Light'), local('LatoLight'),
+    url('../fonts/Lato/LatoLight.woff2') format('woff2'),
+    url('../fonts/Lato/LatoLight.woff') format('woff'),
+    url('../fonts/Lato/LatoLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Regular'), local('LatoRegular'),
+    url('../fonts/Lato/LatoRegular.woff2') format('woff2'),
+    url('../fonts/Lato/LatoRegular.woff') format('woff'),
+    url('../fonts/Lato/LatoRegular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Open Sans';
-  src: local('Open Sans Italic'), local('OpenSans-Italic'),
-    url('../fonts/OpenSans/opensansitalic.woff2') format('woff2'),
-    url('../fonts/OpenSans/opensansitalic.woff') format('woff'),
-    url('../fonts/OpenSans/opensansitalic.ttf') format('truetype');
+  font-family: 'Lato';
+  src: local('Lato Italic'), local('LatoItalic'),
+    url('../fonts/OpenSans/LatoItalic.woff2') format('woff2'),
+    url('../fonts/OpenSans/LatoItalic.woff') format('woff'),
+    url('../fonts/OpenSans/LatoItalic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Open Sans';
-  src: local('Open Sans Bold'), local('OpenSans-Bold'),
-    url('../fonts/OpenSans/opensansbold.woff2') format('woff2'),
-    url('../fonts/OpenSans/opensansbold.woff') format('woff'),
-    url('../fonts/OpenSans/opensansbold.ttf') format('truetype');
+  font-family: 'Lato';
+  src: local('Lato Bold'), local('LatoBold'),
+    url('../fonts/OpenSans/LatoBold.woff2') format('woff2'),
+    url('../fonts/OpenSans/LatoBold.woff') format('woff'),
+    url('../fonts/OpenSans/LatoBold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
-
-// ----------- Lato -----------
-
-
-
-
-// ----------- MyriaPro -----------
+// ----------- MyriadPro -----------
+@font-face {
+  font-family: 'MyriadPro';
+  src: local('MyriadPro Regular'), local('MyriadProRegular'),
+    url('../fonts/MyriadPro/MyriadProRegular.woff2') format('woff2'),
+    url('../fonts/MyriadPro/MyriadProRegular.woff') format('woff'),
+    url('../fonts/MyriadPro/MyriadProRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
