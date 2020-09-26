@@ -1,0 +1,30 @@
+// ----------------------------------------------
+//		about
+// ----------------------------------------------
+.about {
+  padding: 120px 0 140px 0;
+	background-color: #f7f7f7;
+	text-align: center;
+
+	&__container {
+		max-width: 1110px;
+	}
+
+	&__icon {
+		margin-bottom: 30px;
+	}
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 24px;
+    color: #353738;
+    letter-spacing: 3.1px;
+  }
+
+  &__text {
+		font-size: 18px;
+		line-height: 1.88;
+  }
+}
