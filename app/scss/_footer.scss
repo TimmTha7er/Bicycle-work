@@ -1,3 +1,38 @@
 // ----------------------------------------------
 //		footer
 // ----------------------------------------------
+.footer {
+  padding: 100px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__address {
+		font-size: 14px;
+    line-height: 1.15;
+
+    &_city {
+			font-size: 16px;
+      font-family: 'LatoBold';
+      font-weight: 700;
+    }
+    &_street {
+      font-size: 14px;
+    }
+    &_index {
+      font-family: 'LatoItalic';
+      font-style: italic;
+    }
+  }
+}
+
+.social {
+  padding-right: 80px;
+
+  &__img {
+    margin: 0 7px;
+  }
+}

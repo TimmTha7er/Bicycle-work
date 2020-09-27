@@ -22,9 +22,9 @@
 @font-face {
   font-family: 'Lato';
   src: local('Lato Italic'), local('LatoItalic'),
-    url('../fonts/OpenSans/LatoItalic.woff2') format('woff2'),
-    url('../fonts/OpenSans/LatoItalic.woff') format('woff'),
-    url('../fonts/OpenSans/LatoItalic.ttf') format('truetype');
+    url('../fonts/Lato/LatoItalic.woff2') format('woff2'),
+    url('../fonts/Lato/LatoItalic.woff') format('woff'),
+    url('../fonts/Lato/LatoItalic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -32,9 +32,9 @@
 @font-face {
   font-family: 'Lato';
   src: local('Lato Bold'), local('LatoBold'),
-    url('../fonts/OpenSans/LatoBold.woff2') format('woff2'),
-    url('../fonts/OpenSans/LatoBold.woff') format('woff'),
-    url('../fonts/OpenSans/LatoBold.ttf') format('truetype');
+    url('../fonts/Lato/LatoBold.woff2') format('woff2'),
+    url('../fonts/Lato/LatoBold.woff') format('woff'),
+    url('../fonts/Lato/LatoBold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
