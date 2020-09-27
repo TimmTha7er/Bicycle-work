@@ -31,10 +31,11 @@
     padding: 21px;
     border: 1px solid #d3d7d9;
     margin-right: 8px;
-    transition: border-color 0.25s ease;
+    transition: border-color 0.25s ease, box-shadow .25s ease;
 
     &:focus {
       border-color: $accent-color;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     }
 
     &::placeholder {

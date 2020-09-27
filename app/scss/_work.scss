@@ -1,0 +1,119 @@
+// ----------------------------------------------
+//		work
+// ----------------------------------------------
+.work {
+  &__row {
+    display: flex;
+  }
+
+  &__col {
+    // position: relative;
+
+    &_2-3 {
+      flex: 1 0 66.667%;
+    }
+    &_1-3 {
+      flex: 1 0 33.3333%;
+    }
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.25s ease;
+
+    &:hover {
+      background-color: rgba(100, 194, 158, 0.8);
+
+      .work__icon {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: 50% 50%;
+    z-index: -1;
+  }
+
+  // &__icon-wrap {
+  // 	position: absolute;
+  //   height: 100%;
+  // 	top: 0;
+  // 	left: 0;
+  //   display: flex;
+  //   justify-content: center;
+  // 	align-items: center;
+  // }
+
+  &__icon {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    display: block;
+		opacity: 0;
+		transition: opacity .25s ease;
+  }
+
+  &__responsive-wrap {
+    position: relative;
+    padding: 0 0 37.51% 0;
+  }
+}
+
+.bicycle-descr {
+  padding: 70px 65px 55px 65px;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -20px;
+    border: 20px solid transparent;
+    border-top: 20px solid #fff;
+    z-index: 2;
+  }
+
+  &__icon {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 18px;
+    color: #353738;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    text-align: justify;
+    line-height: 1.875;
+
+    &::after {
+      content: '';
+      display: block;
+      margin: 35px auto 0 auto;
+      width: 50px;
+      height: 1px;
+      background-color: #d7d7d7;
+    }
+  }
+}
