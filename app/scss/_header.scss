@@ -17,8 +17,7 @@
   }
 
   &__container {
-    display: flex;
-    justify-content: center;
+   
   }
 
   &__main-menu {
@@ -29,6 +28,22 @@
 
   &__logo {
     transform: translateY(5px);
+  }
+}
+
+.menu-line {
+  display: flex;
+  justify-content: center;
+
+  &__toggle {
+    position: relative;
+    right: 10px;
+    top: 58px;
+    display: none;
+
+    @media only screen and (max-width: 992px) {
+      display: flex;
+    }
   }
 }
 
@@ -48,6 +63,62 @@
         position: absolute;
         bottom: 0;
         right: 0;
+      }
+    }
+  }
+}
+
+// ----------------------------------------------
+//		dropdown menu button
+// ----------------------------------------------
+.toggle-menu {
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1;
+
+  &__line {
+    position: relative;
+    background-color: #fff;
+    width: 30px;
+    height: 4px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 30px;
+      height: 4px;
+      background-color: #fff;
+      transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+
+    &::before {
+      top: -10px;
+      content: '';
+    }
+    &::after {
+      top: 10px;
+    }
+
+    &_active {
+      background-color: transparent;
+
+      &::before,
+      &::after {
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+      &::after {
+        transform: rotate(-45deg);
       }
     }
   }
