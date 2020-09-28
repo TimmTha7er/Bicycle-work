@@ -4,6 +4,10 @@
 .shop {
   &__body {
     display: flex;
+
+    // @media only screen and (max-width: 992px) {
+    //   flex-direction: column;
+    // }
   }
 
   &__row {

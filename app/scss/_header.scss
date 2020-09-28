@@ -18,35 +18,61 @@
 
   &__main-menu {
     margin-top: 35px;
-    display: flex;
-    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 155px;
+    }
   }
 
-
+  &__logo {
+    @media only screen and (max-width: 768px) {
+      position: absolute;
+      top: 35px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
 }
 
 .menu-line {
   display: flex;
   justify-content: center;
 
+  @media only screen and (max-width: 768px) {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
   &__toggle {
-    position: relative;
+    position: absolute;
     right: 10px;
     top: 58px;
     display: none;
 
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 768px) {
       display: flex;
     }
   }
 }
 
 .main-menu {
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+    flex-direction: column;
+
+    &_active {
+      display: flex;
+    }
+  }
+
   &__img-wrap {
     max-width: 95px;
     overflow: hidden;
   }
-  
+
   &__logo {
     max-width: 100%;
     transform: translateY(5px);
@@ -59,6 +85,12 @@
     letter-spacing: 2.6px;
     padding: 0 32px;
 
+    @media only screen and (max-width: 768px) {
+      font-size: 17px;
+      display: block;
+      margin-bottom: 25px;
+    }
+
     &_point {
       position: relative;
 
@@ -67,6 +99,10 @@
         position: absolute;
         bottom: 0;
         right: 0;
+
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }
@@ -86,7 +122,7 @@
 
   &__line {
     position: relative;
-    background-color: #fff;
+    background-color: #000;
     width: 30px;
     height: 4px;
 
@@ -97,7 +133,7 @@
       left: 0;
       width: 30px;
       height: 4px;
-      background-color: #fff;
+      background-color: #000;
       transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
     }
 
