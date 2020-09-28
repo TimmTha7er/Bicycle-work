@@ -4,6 +4,10 @@
 .work {
   &__row {
     display: flex;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &__col {
@@ -11,9 +15,17 @@
 
     &_2-3 {
       flex: 0 1 66.667%;
+
+      @media only screen and (max-width: 992px) {
+        flex: 0 1 55%;
+      }
     }
     &_1-3 {
       flex: 0 1 33.3333%;
+
+      @media only screen and (max-width: 992px) {
+        flex: 0 1 45%;
+      }
     }
   }
 
@@ -44,17 +56,37 @@
     object-fit: cover;
     object-position: 50% 50%;
     z-index: -1;
+
+    @media only screen and (max-width: 768px) {
+      position: static;
+      height: auto;
+    }
+
+    &_hide {
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+    }
   }
 
   &__icon {
     display: block;
-		opacity: 0;
-		transition: opacity .25s ease;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__responsive-wrap {
     position: relative;
     padding: 0 0 37.51% 0;
+
+    @media only screen and (max-width: 768px) {
+      position: static;
+      padding: 0;
+    }
   }
 }
 
@@ -62,6 +94,16 @@
   padding: 70px 65px 52px 65px;
   text-align: center;
   position: relative;
+
+  @media only screen and (max-width: 1200px) {
+    padding: 30px;
+  }
+  @media only screen and (max-width: 992px) {
+    padding: 20px;
+  }
+  @media only screen and (max-width: 480px) {
+    padding: 15px;
+  }
 
   &::after {
     position: absolute;
