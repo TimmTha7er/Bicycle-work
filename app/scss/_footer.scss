@@ -2,8 +2,8 @@
 //		footer
 // ----------------------------------------------
 .footer {
-	padding: 100px 0;
-	background-color: #f7f7f7;
+  padding: 100px 0;
+  background-color: #f7f7f7;
 
   &__container {
     display: flex;
@@ -12,19 +12,17 @@
   }
 
   &__address {
-		font-size: 14px;
+    font-size: 14px;
     line-height: 1.15;
 
     &_city {
-			font-size: 16px;
-      // font-family: 'LatoBold';
+      font-size: 16px;
       font-weight: 700;
     }
     &_street {
       font-size: 14px;
     }
     &_index {
-      // font-family: 'LatoItalic';
       font-style: italic;
     }
   }
@@ -33,7 +31,15 @@
 .social {
   padding-right: 80px;
 
-  &__img {
+  &__link {
+    display: inline-block;
+    border-radius: 50%;
+    max-width: 34px;
+    overflow: hidden;
     margin: 0 7px;
+  }
+
+  &__img {
+    max-width: 100%;
   }
 }
