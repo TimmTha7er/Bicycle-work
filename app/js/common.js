@@ -16,6 +16,7 @@
       return document.createElement(type);
     }
 
+    
     // ----------------------------------------------
     //		humburger menu
     // ----------------------------------------------
@@ -29,6 +30,7 @@
 
     const toggleBtn = getEl('.toggle-menu');
     toggleBtn.onclick = () => toggleMenu();
+
 
     // ----------------------------------------------
     //		section twitter slider
@@ -63,6 +65,7 @@
       // prevButton: '.pricing-controls-btns__prev',
       // nextButton: '.pricing-controls-btns__next',
     });
+
 
     // ----------------------------------------------
     //		smooth scroll when clicking an anchor link
@@ -146,5 +149,25 @@
     const last = links.length - 1;
     if (last < 0) return;
     attachHandler(links, last);
+
+
+    // ----------------------------------------------
+    //		scroll to top
+    // ----------------------------------------------
+    function toggleBtnToTop() {
+      const pos = window.pageYOffset;
+
+      if (pos > 1100) {
+        toTop.style.display = 'flex';
+      } else {
+        toTop.style.display = 'none';
+      }
+    }
+
+    const toTop = getEl('.to-top');
+
+    window.onscroll = function () {
+      toggleBtnToTop();
+    };
   });
 })();
