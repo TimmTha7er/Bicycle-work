@@ -31,6 +31,9 @@ body {
   &:active {
     color: $accent-color;
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 ::selection {
