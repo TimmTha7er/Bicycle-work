@@ -58,11 +58,27 @@
 
   <body>
       <header class="header">
-  <img class="header__bg" src="/img/header/header-bg.jpg" alt="header bg" />
+  <picture>
+    <source
+      srcset="/img/header/header-bg.webp 1x, /img/header/header-bg@2x.webp 2x"
+      type="image/webp"
+    />
+    <img
+      class="header__bg"
+      srcset="/img/header/header-bg@2x.jpg 2x"
+      src="/img/header/header-bg.jpg"
+      alt="header bg"
+    />
+  </picture>
 
   <a class="link header__logo" href="#">
     <div class="main-menu__img-wrap">
-      <img class="main-menu__logo" src="img/logo.png" alt="logo" />
+      <img
+        class="main-menu__logo"
+        srcset="/img/logo.webp"
+        src="img/logo.png"
+        alt="logo"
+      />
     </div>
   </a>
 
@@ -90,6 +106,7 @@
     <div class="about__img-wrap">
       <img
         class="about__icon"
+        srcset="/img/about-us/about-us-icon.webp"
         src="/img/about-us/about-us-icon.png"
         alt="icon"
       />
@@ -107,17 +124,27 @@
 </section>
 
         <section class="work" id="work">
-  <div class="work__row">
+  <div class="work__row work__row_reverse">
     <div class="work__col work__col_2-3">
       <a class="work__link" href="#">
-        <img
-          class="work__img work__img_hide"
-          src="/img/work/work-img-1.jpg"
-          alt="bicycle"
-        />
-
+        <picture class="work__img">
+          <source
+            srcset="
+              /img/work/work-img-1.webp    1x,
+              /img/work/work-img-1@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="work__img"
+            srcset="/img/work/work-img-1@2x.jpg 2x"
+            src="/img/work/work-img-1.jpg"
+            alt="bicycle"
+          />
+        </picture>
         <img
           class="work__icon"
+          srcset="/img/work/work-img-hover-1.webp"
           src="/img/work/work-img-hover-1.png"
           alt="bicycle-icon"
         />
@@ -128,6 +155,7 @@
         <div class="bicycle-descr__icon-wrap">
           <img
             class="bicycle-descr__icon"
+            srcset="/img/work/work-icon-1.webp"
             src="/img/work/work-icon-1.png"
             alt="bicycle-icon"
           />
@@ -141,7 +169,21 @@
         </p>
       </div>
       <div class="work__responsive-wrap">
-        <img class="work__img" src="/img/work/work-img-2.jpg" alt="bicycle" />
+        <picture class="work__img">
+          <source
+            srcset="
+              /img/work/work-img-2.webp    1x,
+              /img/work/work-img-2@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="work__img work__img_hide"
+            srcset="/img/work/work-img-2@2x.jpg 2x"
+            src="/img/work/work-img-2.jpg"
+            alt="bicycle"
+          />
+        </picture>
       </div>
     </div>
   </div>
@@ -151,6 +193,7 @@
         <div class="bicycle-descr__icon-wrap">
           <img
             class="bicycle-descr__icon"
+            srcset="/img/work/work-icon-2.webp"
             src="/img/work/work-icon-2.png"
             alt="bicycle-icon"
           />
@@ -164,19 +207,44 @@
         </p>
       </div>
       <div class="work__responsive-wrap">
-        <img
-          class="work__img work__img_hide"
-          src="/img/work/work-img-4.jpg"
-          alt="bicycle"
-        />
+        <picture class="work__img">
+          <source
+            srcset="
+              /img/work/work-img-4.webp    1x,
+              /img/work/work-img-4@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="work__img work__img_hide"
+            srcset="/img/work/work-img-4@2x.jpg 2x"
+            src="/img/work/work-img-4.jpg"
+            alt="bicycle"
+          />
+        </picture>
       </div>
     </div>
     <div class="work__col work__col_2-3">
       <a class="work__link" href="#">
-        <img class="work__img" src="/img/work/work-img-3.jpg" alt="bicycle" />
+        <picture class="work__img">
+          <source
+            srcset="
+              /img/work/work-img-3.webp    1x,
+              /img/work/work-img-3@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="work__img"
+            srcset="/img/work/work-img-3@2x.jpg 2x"
+            src="/img/work/work-img-3.jpg"
+            alt="bicycle"
+          />
+        </picture>
 
         <img
           class="work__icon"
+          srcset="/img/work/work-img-hover-2.webp"
           src="/img/work/work-img-hover-2.png"
           alt="bicycle-icon"
         />
@@ -186,14 +254,25 @@
   <div class="work__row">
     <div class="work__col work__col_1-3">
       <a class="work__link" href="#">
-        <img
-          class="work__img work__img_hide"
-          src="/img/work/work-img-5.jpg"
-          alt="bicycle"
-        />
+        <picture class="work__img">
+          <source
+            srcset="
+              /img/work/work-img-5.webp    1x,
+              /img/work/work-img-5@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="work__img work__img_hide"
+            srcset="/img/work/work-img-5@2x.jpg 2x"
+            src="/img/work/work-img-5.jpg"
+            alt="bicycle"
+          />
+        </picture>
 
         <img
           class="work__icon"
+          srcset="/img/work/work-img-hover-3.webp"
           src="/img/work/work-img-hover-3.png"
           alt="bicycle-icon"
         />
@@ -205,6 +284,7 @@
         <div class="bicycle-descr__icon-wrap">
           <img
             class="bicycle-descr__icon"
+            srcset="/img/work/work-icon-3.webp"
             src="/img/work/work-icon-3.png"
             alt="bicycle-icon"
           />
@@ -218,20 +298,45 @@
         </p>
       </div>
       <div class="work__responsive-wrap">
-        <img
-          class="work__img work__img_hide"
-          src="/img/work/work-img-6.jpg"
-          alt="bicycle"
-        />
+        <picture class="work__img">
+          <source
+            srcset="
+              /img/work/work-img-6.webp    1x,
+              /img/work/work-img-6@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="work__img work__img_hide"
+            srcset="/img/work/work-img-6@2x.jpg 2x"
+            src="/img/work/work-img-6.jpg"
+            alt="bicycle"
+          />
+        </picture>
       </div>
     </div>
 
     <div class="work__col work__col_1-3">
       <a class="work__link" href="#">
-        <img class="work__img" src="/img/work/work-img-7.jpg" alt="bicycle" />
+        <picture class="work__img">
+          <source
+            srcset="
+              /img/work/work-img-7.webp    1x,
+              /img/work/work-img-7@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="work__img"
+            srcset="/img/work/work-img-7@2x.jpg 2x"
+            src="/img/work/work-img-7.jpg"
+            alt="bicycle"
+          />
+        </picture>
 
         <img
           class="work__icon"
+          srcset="/img/work/work-img-hover-3.webp"
           src="/img/work/work-img-hover-3.png"
           alt="bicycle-icon"
         />
@@ -247,6 +352,7 @@
         <div class="slider-item__icon">
           <img
             class="slider-item__img"
+            srcset="/img/social/social-twitter.webp"
             src="/img/social/social-twitter.png"
             alt="twitter"
           />
@@ -260,11 +366,12 @@
           ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae,
           pretium ante amet.
         </p>
-			</div>
-			<div class="slider-item">
+      </div>
+      <div class="slider-item">
         <div class="slider-item__icon">
           <img
             class="slider-item__img"
+            srcset="/img/social/social-twitter.webp"
             src="/img/social/social-twitter.png"
             alt="twitter"
           />
@@ -278,11 +385,12 @@
           ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae,
           pretium ante amet.
         </p>
-			</div>
-			<div class="slider-item">
+      </div>
+      <div class="slider-item">
         <div class="slider-item__icon">
           <img
             class="slider-item__img"
+            srcset="/img/social/social-twitter.webp"
             src="/img/social/social-twitter.png"
             alt="twitter"
           />
@@ -298,13 +406,7 @@
         </p>
       </div>
     </div>
-    <div class="twitter-nav-container">
-      <!-- <div
-        class="twitter-nav-container__dot twitter-nav-container__dot_active"
-      ></div>
-      <div class="twitter-nav-container__dot"></div>
-      <div class="twitter-nav-container__dot"></div> -->
-    </div>
+    <div class="twitter-nav-container"></div>
   </div>
 </section>
 
@@ -314,13 +416,24 @@
       <div class="shop__row">
         <div class="shop__col shop__col_1-2">
           <a class="shop__link shop__responsive-wrap-l" href="#">
-            <img
-              class="shop__img"
-              src="/img/shop/shop-img-1.jpg"
-              alt="bicycle"
-            />
+            <picture class="shop__img">
+              <source
+                srcset="
+                  /img/shop/shop-img-1.webp    1x,
+                  /img/shop/shop-img-1@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="shop__img"
+                srcset="/img/shop/shop-img-1@2x.jpg 2x"
+                src="/img/shop/shop-img-1.jpg"
+                alt="bicycle"
+              />
+            </picture>
             <img
               class="shop__icon"
+              srcset="/img/shop/shop-hover-icon.webp"
               src="/img/shop/shop-hover-icon.png"
               alt="bicycle-icon"
             />
@@ -328,13 +441,24 @@
         </div>
         <div class="shop__col shop__col_1-2">
           <a class="shop__link shop__responsive-wrap-l" href="#">
-            <img
-              class="shop__img"
-              src="/img/shop/shop-img-2.jpg"
-              alt="bicycle"
-            />
+            <picture class="shop__img">
+              <source
+                srcset="
+                  /img/shop/shop-img-2.webp    1x,
+                  /img/shop/shop-img-2@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="shop__img"
+                srcset="/img/shop/shop-img-2@2x.jpg 2x"
+                src="/img/shop/shop-img-2.jpg"
+                alt="bicycle"
+              />
+            </picture>
             <img
               class="shop__icon"
+              srcset="/img/shop/shop-hover-icon.webp"
               src="/img/shop/shop-hover-icon.png"
               alt="bicycle-icon"
             />
@@ -343,9 +467,24 @@
       </div>
       <div class="shop__row">
         <a class="shop__link shop__responsive-wrap-l" href="#">
-          <img class="shop__img" src="/img/shop/shop-img-7.jpg" alt="bicycle" />
+          <picture class="shop__img">
+            <source
+              srcset="
+                /img/shop/shop-img-7.webp    1x,
+                /img/shop/shop-img-7@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="shop__img"
+              srcset="/img/shop/shop-img-7@2x.jpg 2x"
+              src="/img/shop/shop-img-7.jpg"
+              alt="bicycle"
+            />
+          </picture>
           <img
             class="shop__icon"
+            srcset="/img/shop/shop-hover-icon.webp"
             src="/img/shop/shop-hover-icon.png"
             alt="bicycle-icon"
           />
@@ -354,9 +493,24 @@
     </div>
     <div class="shop__col shop__col_1-6">
       <a class="shop__link shop__responsive-wrap" href="#">
-        <img class="shop__img" src="/img/shop/shop-img-3.jpg" alt="bicycle" />
+        <picture class="shop__img">
+          <source
+            srcset="
+              /img/shop/shop-img-3.webp    1x,
+              /img/shop/shop-img-3@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="shop__img"
+            srcset="/img/shop/shop-img-3@2x.jpg 2x"
+            src="/img/shop/shop-img-3.jpg"
+            alt="bicycle"
+          />
+        </picture>
         <img
           class="shop__icon"
+          srcset="/img/shop/shop-hover-icon.webp"
           src="/img/shop/shop-hover-icon.png"
           alt="bicycle-icon"
         />
@@ -364,9 +518,24 @@
     </div>
     <div class="shop__col shop__col_1-6">
       <a class="shop__link shop__responsive-wrap" href="#">
-        <img class="shop__img" src="/img/shop/shop-img-4.jpg" alt="bicycle" />
+        <picture class="shop__img">
+          <source
+            srcset="
+              /img/shop/shop-img-4.webp    1x,
+              /img/shop/shop-img-4@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="shop__img"
+            srcset="/img/shop/shop-img-4@2x.jpg 2x"
+            src="/img/shop/shop-img-4.jpg"
+            alt="bicycle"
+          />
+        </picture>
         <img
           class="shop__icon"
+          srcset="/img/shop/shop-hover-icon.webp"
           src="/img/shop/shop-hover-icon.png"
           alt="bicycle-icon"
         />
@@ -375,9 +544,24 @@
     <div class="shop__col shop__col_1-3">
       <div class="shop__row">
         <a class="shop__link shop__responsive-wrap-l" href="#">
-          <img class="shop__img" src="/img/shop/shop-img-5.jpg" alt="bicycle" />
+          <picture class="shop__img">
+            <source
+              srcset="
+                /img/shop/shop-img-5.webp    1x,
+                /img/shop/shop-img-5@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="shop__img"
+              srcset="/img/shop/shop-img-5@2x.jpg 2x"
+              src="/img/shop/shop-img-5.jpg"
+              alt="bicycle"
+            />
+          </picture>
           <img
             class="shop__icon"
+            srcset="/img/shop/shop-hover-icon.webp"
             src="/img/shop/shop-hover-icon.png"
             alt="bicycle-icon"
           />
@@ -386,13 +570,24 @@
       <div class="shop__row">
         <div class="shop__col shop__col_1-2">
           <a class="shop__link shop__responsive-wrap-l" href="#">
-            <img
-              class="shop__img"
-              src="/img/shop/shop-img-8.jpg"
-              alt="bicycle"
-            />
+            <picture class="shop__img">
+              <source
+                srcset="
+                  /img/shop/shop-img-8.webp    1x,
+                  /img/shop/shop-img-8@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="shop__img"
+                srcset="/img/shop/shop-img-8@2x.jpg 2x"
+                src="/img/shop/shop-img-8.jpg"
+                alt="bicycle"
+              />
+            </picture>
             <img
               class="shop__icon"
+              srcset="/img/shop/shop-hover-icon.webp"
               src="/img/shop/shop-hover-icon.png"
               alt="bicycle-icon"
             />
@@ -400,13 +595,24 @@
         </div>
         <div class="shop__col shop__col_1-2">
           <a class="shop__link shop__responsive-wrap-l" href="#">
-            <img
-              class="shop__img"
-              src="/img/shop/shop-img-6.jpg"
-              alt="bicycle"
-            />
+            <picture class="shop__img">
+              <source
+                srcset="
+                  /img/shop/shop-img-6.webp    1x,
+                  /img/shop/shop-img-6@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="shop__img"
+                srcset="/img/shop/shop-img-6@2x.jpg 2x"
+                src="/img/shop/shop-img-6.jpg"
+                alt="bicycle"
+              />
+            </picture>
             <img
               class="shop__icon"
+              srcset="/img/shop/shop-hover-icon.webp"
               src="/img/shop/shop-hover-icon.png"
               alt="bicycle-icon"
             />
@@ -423,7 +629,12 @@
         <section class="mailing">
   <div class="container mailing__container">
     <div class="mailing__logo">
-      <img class="mailing__img" src="/img/logo.png" alt="logo" />
+      <img
+        class="mailing__img"
+        srcset="/img/logo.webp"
+        src="/img/logo.png"
+        alt="logo"
+      />
     </div>
     <h2 class="mailing__title">Stay on the saddle!</h2>
     <form class="mailing-form" action="#" enctype="multipart/form-data">
@@ -451,21 +662,24 @@
       <a class="social__link link" href="#">
         <img
           class="social__img"
-          src="img/social/social-twitter-cir.png"
+          srcset="/img/social/social-twitter-cir.webp"
+          src="/img/social/social-twitter-cir.png"
           alt="twitter"
         />
       </a>
       <a class="social__link link" href="#">
         <img
           class="social__img"
-          src="img/social/social-fb.png"
+          srcset="/img/social/social-fb.webp"
+          src="/img/social/social-fb.png"
           alt="facebook"
         />
       </a>
       <a class="social__link link" href="#">
         <img
           class="social__img"
-          src="img/social/social-pinterest.png"
+          srcset="/img/social/social-pinterest.webp"
+          src="/img/social/social-pinterest.png"
           alt="pinterest"
         />
       </a>
@@ -473,6 +687,7 @@
     <a class="footer__credits link" href="#">
       <img
         class="footer__img"
+        srcset="/img/footer/Y_E_B_O_Logo.webp"
         src="/img/footer/Y_E_B_O_Logo.png"
         alt="Handcrafted by Yebo"
       />

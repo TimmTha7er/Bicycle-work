@@ -8,6 +8,12 @@
     @media only screen and (max-width: 768px) {
       flex-direction: column;
     }
+
+    &_reverse {
+      @media only screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+      }
+    }
   }
 
   &__col {
@@ -74,9 +80,10 @@
     opacity: 0;
     transition: opacity 0.25s ease;
 
-    @media only screen and (max-width: 768px) {
-      display: none;
-    }
+    position: absolute;
+    // @media only screen and (max-width: 768px) {
+    //   // display: none;
+    // }
   }
 
   &__responsive-wrap {

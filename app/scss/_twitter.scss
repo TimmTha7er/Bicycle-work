@@ -21,6 +21,7 @@
 
   &__slider {
     margin-bottom: 105px;
+    
 
     @media only screen and (max-width: 1200px) {
       margin-bottom: 80px;
@@ -38,6 +39,11 @@
 }
 
 .slider-item {
+  // for not jump loading
+  &:not(:first-child) {
+    display: none;
+  }
+  
   &__icon {
     max-width: 32px;
     margin: 0 auto;
