@@ -99,10 +99,10 @@
     padding: 30px;
   }
   @media only screen and (max-width: 992px) {
-    padding: 15px;
+    padding: 15px 15px 25px 15px;
   }
   @media only screen and (max-width: 480px) {
-    padding: 5px;
+    padding: 5px 5px 15px 5px;
   }
 
   &::after {
@@ -150,6 +150,10 @@
       width: 50px;
       height: 1px;
       background-color: #d7d7d7;
+
+      @media only screen and (max-width: 992px) {
+        margin-top: 10px;
+      }
     }
   }
 }
