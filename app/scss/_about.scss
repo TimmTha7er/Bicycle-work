@@ -3,35 +3,48 @@
 // ----------------------------------------------
 .about {
   padding: 120px 0 135px 0;
-	background-color: #f7f7f7;
-	text-align: center;
+  background-color: #f7f7f7;
+  text-align: center;
 
-	&__container {
-		max-width: 1110px;
-	}
+  @media only screen and (max-width: 1200px) {
+    padding: 100px 0 115px 0;
+  }
+  @media only screen and (max-width: 992px) {
+    padding: 80px 0 95px 0;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 60px 0 75px 0;
+  }
+  @media only screen and (max-width: 480px) {
+    padding: 40px 0 55px 0;
+  }
 
-	&__img-wrap {
-		max-width: 52px;
-		margin: 0 auto;
-		overflow: hidden;
-		margin-bottom: 30px;
-	}
+  &__container {
+    max-width: 1110px;
+  }
 
-	&__icon {
-		max-width: 100%;
-	}
+  &__img-wrap {
+    max-width: 52px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    max-width: 100%;
+  }
 
   &__title {
     font-size: 18px;
     font-weight: 700;
-		text-transform: uppercase;
-		margin-bottom: 24px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
     color: #353738;
     letter-spacing: 3.1px;
   }
 
   &__text {
-		font-size: 18px;
-		line-height: 1.88;
+    font-size: 18px;
+    line-height: 1.88;
   }
 }

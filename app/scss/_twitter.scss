@@ -6,8 +6,34 @@
   text-align: center;
   background-color: #f7f7f7;
 
+  @media only screen and (max-width: 1200px) {
+    padding: 100px 0 50px 0;
+  }
+  @media only screen and (max-width: 992px) {
+    padding: 80px 0 40px 0;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 60px 0 30px 0;
+  }
+  @media only screen and (max-width: 480px) {
+    padding: 40px 0 20px 0;
+  }
+
   &__slider {
     margin-bottom: 105px;
+
+    @media only screen and (max-width: 1200px) {
+      margin-bottom: 80px;
+    }
+    @media only screen and (max-width: 992px) {
+      margin-bottom: 60px;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+    @media only screen and (max-width: 480px) {
+      margin-bottom: 30px;
+    }
   }
 }
 
