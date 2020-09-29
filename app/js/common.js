@@ -23,9 +23,11 @@
     function toggleMenu() {
       const toggleLine = getEl('.toggle-menu__line');
       const mainMenu = getEl('.main-menu');
+      const menuBg = getEl('.menu-line');
 
       toggleLine.classList.toggle('toggle-menu__line_active');
       mainMenu.classList.toggle('main-menu_active');
+      menuBg.classList.toggle('menu-line_active');
     }
 
     const toggleBtn = getEl('.toggle-menu');
@@ -61,9 +63,6 @@
       nav: true,
       navPosition: 'bottom',
       navContainer: '.twitter-nav-container',
-      // controlsContainer: '.pricing-controls-btns',
-      // prevButton: '.pricing-controls-btns__prev',
-      // nextButton: '.pricing-controls-btns__next',
     });
 
 
